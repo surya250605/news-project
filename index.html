@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📰 News App</h1>
+
+    <!-- Dark Mode -->
+    <button class="dark-btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    <button class="refresh-btn" onclick="refreshNews()">🔄 Refresh</button>
+
+
+    <!-- Search -->
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search news...">
+        <button onclick="searchNews()">Search</button>
+    </div>
+
+    <!-- Categories -->
+    <div class="categories">
+        <button onclick="loadCategory('general')">General</button>
+        <button onclick="loadCategory('technology')">Technology</button>
+        <button onclick="loadCategory('sports')">Sports</button>
+        <button onclick="loadCategory('business')">Business</button>
+        <button onclick="loadCategory('health')">Health</button>
+        <p id="lastUpdated" style="margin-top:10px;font-size:14px;"></p>
+        
+
+    </div>
+
+    <!-- News -->
+    <div id="news"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
